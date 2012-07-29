@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Question:</b>
+  <%= @age.question %>
+</p>
+
+<p>
+  <b>Answer:</b>
+  <%= @age.answer %>
+</p>
+
+
+<%= link_to 'Edit', edit_age_path(@age) %> |
+<%= link_to 'Back', ages_path %>
