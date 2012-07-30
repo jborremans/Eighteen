@@ -1,15 +1,17 @@
-<h1>Listing ages</h1>
+<!-- <h1>Listing ages</h1> -->
+<h1><%= link_to 'What Would You Do If You Were 18 Again?', new_age_path %></h1>
 
 <table>
-  <!-- <tr>
-      <th>Question</th>
-      <th>Answer</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr> -->
+  <tr>
+        <!-- <th>Question</th> -->
+        <th>Answer</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
 
 <% @ages.each do |age| %>
+<ol>
   <tr>
     <td><%= age.question %></td>
     <td><%= age.answer %></td>
@@ -22,4 +24,4 @@
 
 <br />
 
-<%= link_to 'New Age', new_age_path %>
+<!-- <%= link_to 'New Age', new_age_path %> -->

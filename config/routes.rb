@@ -1,5 +1,6 @@
 Eigtheen::Application.routes.draw do
   resources :ages
+  root :to => 'ages#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
